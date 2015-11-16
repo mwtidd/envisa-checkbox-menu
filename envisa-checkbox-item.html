@@ -1,0 +1,50 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/iron-behaviors/iron-control-state.html">
+<link rel="import" href="../../bower_components/iron-behaviors/iron-button-state.html">
+
+<link rel="import" href="../../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../../bower_components/paper-item/paper-item.html">
+
+<dom-module id="envisa-checkbox-item">
+    <link rel="import" type="css" href="css/envisa-checkbox-item.css">
+
+    <template>
+        <paper-item>
+            <paper-checkbox checked="{{selected}}"></paper-checkbox>
+            <content></content>
+        </paper-item>
+    </template>
+
+    <style is="custom-style">
+
+        paper-item:focus{
+            outline: 0;
+        }
+
+        :host.iron-selected > paper-item{
+            font-weight: 500;
+        }
+
+    </style>
+
+    <script>
+        Polymer({
+            is: 'envisa-checkbox-item',
+            listeners: {
+            },
+            behaviors: [
+                Polymer.IronControlState,
+                Polymer.IronButtonState
+            ],
+            properties: {
+                selected: {
+                    type: Boolean,
+                    value: false,
+                    notify: true
+                }
+            }
+        });
+    </script>
+
+</dom-module>
