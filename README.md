@@ -27,10 +27,10 @@ And you can run it via:
 
     polyserve
     
-    polyserve -p 9090
+    polyserve -p 9092
 
 Once running, you can preview the element at
-`http://localhost:9090/components/envisa-checkbox-menu/demo/`
+`http://localhost:9092/components/envisa-checkbox-menu/demo/`
 
 
 ## Testing Your Element

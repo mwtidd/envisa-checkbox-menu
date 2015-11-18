@@ -26,13 +26,17 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0",
     "iron-ajax": "PolymerElements/iron-ajax#~1.0.9",
-    "paper-menu": "PolymerElements/paper-menu#~1.1.1",
+    "paper-menu": "PolymerElements/paper-menu#~1.2.0",
     "paper-item": "PolymerElements/paper-item#~1.0.7",
-    "paper-checkbox": "PolymerElements/paper-checkbox#~1.0.14"
+    "paper-checkbox": "PolymerElements/paper-checkbox#~1.0.14",
+    "paper-radio-button": "PolymerElements/paper-radio-button#~1.0.11"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
     "web-component-tester": "*"
   },
-  "moduleType": []
+  "moduleType": [],
+  "resolutions": {
+    "paper-menu": "~1.2.0"
+  }
 }

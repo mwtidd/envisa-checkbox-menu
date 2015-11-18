@@ -15,14 +15,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <title>envisa-checkbox-menu demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="../envisa-checkbox-menu.html">
+    <link rel="import" href="../envisa-checkbox-item.html">
+    <link rel="import" href="../envisa-radio-item.html">
   </head>
   <body>
 
     <p>An example of <code>&lt;envisa-checkbox-menu&gt;</code>:</p>
 
-    <envisa-checkbox-menu>
+    <envisa-checkbox-menu multi>
       <envisa-checkbox-item>Test 1</envisa-checkbox-item>
       <envisa-checkbox-item>Test 2</envisa-checkbox-item>
+    </envisa-checkbox-menu>
+
+    <envisa-checkbox-menu>
+      <envisa-radio-item>Test 1</envisa-radio-item>
+      <envisa-radio-item>Test 2</envisa-radio-item>
     </envisa-checkbox-menu>
 
     <script>
